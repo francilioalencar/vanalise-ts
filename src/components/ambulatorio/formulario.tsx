@@ -1,6 +1,7 @@
 
 import { Row } from "../../element/Row";
 import {Column} from "../../element/column";
+import Cid from "../cid/cid";
 import AcuidadeVisual from "./acuidadeVisual";
 import Anamnese from "./anamnese"
 import Oculos from "./oculos";
@@ -24,6 +25,10 @@ const Formulario =()=>{
 
             <Row>
                 <Oculos />
+            </Row>
+
+            <Row>
+                <Cid />
             </Row>
 
         </Column>
