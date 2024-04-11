@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ThProps{
-    whidth: string;
+    whidth?: string;
 }
 
 const Th = styled.th<ThProps>`

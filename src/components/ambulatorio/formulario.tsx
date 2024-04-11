@@ -1,13 +1,19 @@
 
 import { Row } from "../../element/Row";
 import {Column} from "../../element/column";
+import OculosInterface from "../../model/dto/oculos-interface";
 import Cid from "../cid/cid";
 import AcuidadeVisual from "./acuidadeVisual";
 import Anamnese from "./anamnese"
 import Oculos from "./oculos";
 
+interface FormularioProps{
+    oculos ?: OculosInterface
+    setOculos : React.Dispatch<React.SetStateAction<OculosInterface>>
+}
 
-const Formulario =()=>{
+
+const Formulario =({oculos, setOculos}: FormularioProps)=>{
 
 
 
@@ -24,7 +30,7 @@ const Formulario =()=>{
             </Row>
 
             <Row>
-                <Oculos />
+                <Oculos oculos={oculos} setOculos={setOculos} />
             </Row>
 
             <Row>
